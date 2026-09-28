@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # ---------- 1. Load data ----------
-df = pd.read_csv("data/customer_support_faq_dataset.csv", encoding="utf-8")
+df = pd.read_csv("customer_support_faq_dataset.csv", encoding="utf-8")
 df.columns = df.columns.str.strip().str.lower()
 
 STOPWORDS = {
